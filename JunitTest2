@@ -1,0 +1,13 @@
+package tests;
+
+public class JunitTest {
+		public void merge() {
+			merge QS = new merge();
+			int[] des= {7, 15, 2, 1};
+			int[] or= {8, 4, 1, 0};
+			int[] Lista = QS.compareTo(des);
+			assertArrayEquals(or, Lista);
+			
+		}
+	
+}

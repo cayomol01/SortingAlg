@@ -18,6 +18,7 @@ class Main {
         int number = 0;
         int restantes = 3000;
         int contador = 0;
+        //Se crean los numeros dentro del archivo
         while(restantes != 0){
             number = random.nextInt(3001);
             lista_num[contador] = number;
@@ -28,6 +29,8 @@ class Main {
 
         }
         printer.flush();
+
+        //Se crean cada uno de los arrays a traves de los diferentes metodos
         gnome = sort.Gnome_sort(lista_num);
         bubble = sort.BubbleSort(lista_num);
         quick = sort.Quicksort(lista_num, 0, lista_num.length-1);
